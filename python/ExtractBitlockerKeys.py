@@ -195,8 +195,7 @@ def parseArgs():
 
     return parser.parse_args()
 
-
-if __name__ == '__main__':
+def main():
     options = parseArgs()
     if options.auth_hashes is not None:
         if ":" not in options.auth_hashes:
@@ -261,3 +260,7 @@ if __name__ == '__main__':
 
 
     print("[+] Bye Bye!")
+
+
+if __name__ == '__main__':
+    main()
